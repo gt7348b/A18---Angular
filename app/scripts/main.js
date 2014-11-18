@@ -10,9 +10,29 @@
 
   .config(function($routeProvider){
 
-    console.log('here');
+    $routeProvider.when('/', {
+      templateUrl: 'templates/home-template.html',
+      controller: 'MainController'
+    });
+
+    $routeProvider.when('/add', {
+      templateUrl: 'templates/add-template.html',
+      controller: 'AddController'
+    });
+
+    $routeProvider.when('/individual', {
+      templateUrl: 'templates/individual-template.html',
+      controller: 'IndividualController'
+    });
+
+    $routeProvider.otherwise({
+      templateUrl: 'templates/other-template.html',
+      controller: 'OtherController'
+    });
 
   })
+
+
 
 
 
