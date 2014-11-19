@@ -1,5 +1,9 @@
-(function(){
+<form ng-submit='addTdata()'>
 
+  <input ng-Model='tdata.title' type='text' placeholder = 'Enter Data Title'/>
+  <input ng-Model='tdata.link' type='text' placeholder='Enter Link to Data'/>
+  <textarea ng-Model='tdata.description' type='text' placeholder='Enter Data Description'/>
 
+  <button>Add Data</button>
 
-}());
+</form>
