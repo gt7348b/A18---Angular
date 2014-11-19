@@ -7,14 +7,12 @@
     $http.get(Url).success( function(results){
 
       $scope.list = results;
-      console.log(results);
     });
 
     //This takes to the edit page
     $scope.edit= function(tdata){
       console.log(tdata);
-      $location.path('/individual/'+tdata._id);
-
+      $location.path('/individual/'+ tdata._id);
     };
 
   }]);

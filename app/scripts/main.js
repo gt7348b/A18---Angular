@@ -20,8 +20,8 @@
       controller: 'AddController'
     });
 
-    $routeProvider.when('/individual', {
-      templateUrl: 'templates/individual-template.html',
+    $routeProvider.when('/individual/:id', {
+      templateUrl: 'templates/individual_template.html',
       controller: 'IndividualController'
     });
 
