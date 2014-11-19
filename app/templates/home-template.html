@@ -1,7 +1,7 @@
 <ul class='homedisplay'>
   <li ng-repeat='tdata in list'>
-    <h3>
-      <a href='{{ tdata.link }}'>{{ tdata.title }}</a>
-    </hr>
+    <h3>{{ tdata.title }}</h3></br>
+      <p>{{ tdata.description }}. Click <a href='{{ tdata.link }}'>here</a> to access data.</p>
+    <button ng-click='edit(tdata)'>Edit</button>
   </li>
 </ul>
