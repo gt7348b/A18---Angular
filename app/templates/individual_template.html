@@ -1,9 +1,12 @@
-<form ng-submit='addTdata()'>
+<form ng-submit='editTdata()'>
 
   <input ng-Model='tdata.title' type='text' placeholder = 'Enter Data Title'/>
   <input ng-Model='tdata.link' type='text' placeholder='Enter Link to Data'/>
   <textarea ng-Model='tdata.description' type='text' placeholder='Enter Data Description'/>
 
-  <button>Update!</button><button ng-click='delete'>Delete</button>
+  <button>Update!</button>
+</form>
+
+  <button ng-click='delete'>Delete</button>
 
 </form>
