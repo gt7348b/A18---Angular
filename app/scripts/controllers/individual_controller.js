@@ -3,7 +3,7 @@
   angular.module('TranspoData')
   .controller('IndividualController', ['$scope', '$routeParams','$http', '$location', 'Url', function($scope, $routeParams, $http, $location, Url){
 
-    console.log($routeParams);
+    //console.log($routeParams);
 
     $http.get(Url + $routeParams.id).success( function(data){
 
@@ -28,8 +28,8 @@
             e.preventDefault();
             console.log(this);
       // Remove options
-      //this.options.blogs.destroy();
-
+      this.options.blogs.destroy();
+      $location.path('/');
 
     }
 
