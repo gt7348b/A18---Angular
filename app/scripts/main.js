@@ -1,10 +1,10 @@
 (function(){
 
-  angular.module('TranspoData', ['ngRoute'])
+  angular.module('TranspoData', ['ngRoute', 'firebase'])
 
   .constant ({
 
-    'Url': 'http://tiy-atl-fe-server.herokuapp.com/collections/transpodata/'
+    'DATA_URL': 'https://tdata.firebaseio.com/'
 
   })
 
